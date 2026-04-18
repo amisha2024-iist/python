@@ -28,3 +28,8 @@ print(f"the list is: {numbers}")
 item_to_count=int(input("enter the nummber to count"))
 c=numbers.count(item_to_count)
 print(f"occurrence of {item_to_count} is {c}")
+#membership operation
+#in:it check whether the element is present or not in a list.
+language=["python","c++","java","python"]
+print("python" in language)
+print("javascript" not in language)
