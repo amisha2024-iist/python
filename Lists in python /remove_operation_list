@@ -1,0 +1,11 @@
+#remove:remove an element from a list
+fruits=["mango","apple","banana"]
+print(fruits)
+fruits.remove("banana")
+print(fruits)
+
+#pop():it takes the index at which the value needs to be deleted
+fruit=["mango","apple","banana","pineapple"]
+print(fruits)
+fruits.pop(2)
+print(fruits
