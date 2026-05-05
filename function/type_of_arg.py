@@ -8,3 +8,8 @@ def add(a,b=10):
     return a+b
 result=add(10,40)
 print(result)
+def add(a,c,b=10):
+    return a+b+c
+result=add(10,40)
+print(result)
+#the non default argument should not follow the default argument.
