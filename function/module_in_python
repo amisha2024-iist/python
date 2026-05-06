@@ -1,0 +1,28 @@
+#.py file is a module
+#build in module
+#math,random,datetime,....
+
+#how to import a module in python
+#syntsx:import module_name
+#syntax for importing only fee functions/variables: from module_name import f1,f2,f3
+
+"""import math
+#calculate square root of a number
+num=100
+output=math.sqrt(num) #module.function_name(arg1,arg2....)
+print(f"square root of {num} is {output}")
+#calculate the area of a circle
+radius=5
+area_of_circle=math.pi*(radius**2)
+print(f"area of circle with radius {radius} is {area_of_circle}")
+print(math.pi)
+"""
+#throw a di
+"""from random import randint
+
+value=randint(1,30)
+print(value)"""
+#syntax to create an alias for the module that is imported:import module_name as alias_name
+import datetime as dt
+t=dt.time(8,43,51)
+print(t)
