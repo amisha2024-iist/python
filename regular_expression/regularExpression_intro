@@ -1,0 +1,17 @@
+#regular  expression(RegEx)
+import re
+message="the current python version is 3.13. other previous version are 3.12,3.11,3.10"
+
+#if python is present in the message.
+"""print("python" in message)
+print("13" in message)
+print("14" in message)
+
+print(message.find('3.13'))
+print(message.find('python'))
+print(message.find('previous'))"""
+"""
+re.search(regex_pattern,string)=>returns a match object there is a match found,else return none.
+"""
+match_obj=re.search('python',message)
+print(match_obj)
