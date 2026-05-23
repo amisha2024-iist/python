@@ -1,0 +1,9 @@
+#x mode => create a file
+fh = open("file10.txt",'xt')
+
+#writing into a file
+#write(content)
+fh.write("this file is created using the 'x mode in python.\n")
+fh.write("next line.")
+#close the file
+fh.close()
