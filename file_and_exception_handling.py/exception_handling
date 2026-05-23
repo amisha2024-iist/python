@@ -1,0 +1,19 @@
+import io
+try:
+    with open("file10.txt","wt") as fh:
+        data=fh.read()
+
+    print(data)
+except FileNotFoundError as file_error:
+    print("file that you are trying to open does not exist")
+    print(file_error)
+
+except io.UnsupportedOperation as io_error:
+    print(io_error)
+else:
+    print("else block")
+    print(data)
+finally:
+    print("finally block")
+
+#else block=>
