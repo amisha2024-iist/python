@@ -1,0 +1,10 @@
+#raise
+
+age = int(input("enter age: "))
+if age<0:
+    raise Exception("age can not be negative")
+else:
+    if age>18:
+        print("you can vote")
+    else:
+        print("you can not vote")
