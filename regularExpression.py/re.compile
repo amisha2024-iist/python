@@ -1,0 +1,21 @@
+import re
+phones="Alice-12453132543,Mark-134342345t43,Carol-1230957689"
+
+pattern=(r"\d{10}")
+pattern_compiled=re.compile(pattern)
+
+print(pattern_compiled)
+print(type(pattern_compiled))
+match_obj=re.findall(pattern_compiled,phones)
+print(match_obj)
+with open("student_details","rt") as fh:
+    data=fh.read()
+
+print(data)
+print(type(data))
+
+phone_matches=re.finditer(pattern_compiled,data)
+print(phone_matches)
+
+for matches in phone_matches:
+    print(matches)
