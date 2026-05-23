@@ -1,0 +1,7 @@
+#open the file for writing.overwrites the file
+#creates a new file if file doesn't exists.
+
+fh=open("file2.txt",'wt')
+fh.write("this file is overwritten using 'w' moe in python\n")
+fh.write("have a nice day")
+fh.close()
