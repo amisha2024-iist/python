@@ -1,0 +1,26 @@
+import re
+#sub()
+s1="Sunday,monday,tuesday,Saturday,monday,sunday"
+pat=r"S[a-z]+"#anything starting with s will replaced with friday so saturday and sunday both will replaced.
+replacement="friday"
+result=re.sub(pat,replacement,s1)
+print(result)
+
+message="""we are learning re.Using RE,we can search for a pattern in a given string.
+Using the sun(),we can replace the pattern with a given string as well"""
+
+pat=r'\bre\b'#replace re to regular expression.
+replacement="regular expression"
+result=re.sub(pat,replacement,message)
+print(result)
+
+pat=r'\bre\b'#replace re to regular expression.
+replacement="regular expression"
+result=re.sub(pat,replacement,message,flags=re.IGNORECASE)#ignore uppercase(capital letter) and replace RE also to regular expression.
+print(result)
+
+phone_nums="+91-2345345343,+91-2345345343"
+pattern=r"[+-]"
+replacement=""
+result=re.sub(pattern,replacement,phone_nums)
+print(result)
